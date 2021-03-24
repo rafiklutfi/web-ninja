@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
 import { header, btn } from "../styles/home.module.css"
 
@@ -15,6 +15,7 @@ export default function Home() {
             Portfolio Projects
           </Link>
         </div>
+        <img src="/banner.png" alt="Site Banner" style={{ maxWidth: "100%" }} />
       </section>
     </Layout>
   )

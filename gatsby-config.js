@@ -6,5 +6,19 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/src/projects/`,
+      },
+    },
+  ],
+  siteMetadata: {
+    title: "Web Ninja",
+    description: "Web dev Portofolio",
+    copyright: "This website is copyright 2021 We Ninja",
+  },
 }
